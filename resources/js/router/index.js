@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import productIndex from '../components/products/Index.vue';
 import notFound from '../components/NotFound.vue';
-import coba from '../components/Coba.vue';
+import productForm from '../components/products/Form.vue';
 
 const routes = [
     {
@@ -11,8 +11,9 @@ const routes = [
         component: productIndex
     },
     {
-        path: '/coba',
-        component: coba
+        path: '/products/create',
+        name: 'products.create',
+        component: productForm
     },
     {
         path: '/:pathMatch(.*)*',
